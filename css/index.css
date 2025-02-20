@@ -1,117 +1,127 @@
-
 .playfair-display {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-  }
+}
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.background{
-
+.background {
     position: relative;
-    bottom: 40px;
-    width: auto;
-    height: 300vh;
+    width: 100%;
     background: linear-gradient(to bottom, #00000072, #000000);
 }
 
-#imageback{
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
+#imageback {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     object-position: center;
-    opacity: 0.4;
-
+    opacity: 4;
 }
-
 
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    height: 0vh; /* Make the page tall enough to scroll */
 }
 
-
-  
-
+/* Kontainer Umum */
 .container {
-    
-    display: flex; /* Mengubah container menjadi baris (row) */
-    flex-direction: row; /* Default-nya sudah row, tapi bisa ditulis eksplisit */
-    padding: 50px;
-
-  }
-
-  .container1 {
-    
-    flex-direction: row; /* Default-nya sudah row, tapi bisa ditulis eksplisit */
-    padding: 20px;
-  }
-
-.box {
-    width: 1300px;
-    height: 550px;
-    margin: 3% auto;
-    
-    background: linear-gradient(to bottom, #ffcdb281, #b35f6f);
-    color: #FEF9E1;
     display: flex;
-    align-items: start;
-    justify-content: space-evenly;
-    font-size: 28px;
-    opacity: 0;
-    transform: translateY(50px); /* Start from below */
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
 }
 
-.box1 {
-    width: 1300px;
-    height: 600px;
+/* Menggabungkan .box dan .box1 */
+.box, .box1 {
+    width: 90%;
+    max-width: 1300px;
+    height: auto;
     margin: 3% auto;
-    
+    padding: 20px;
     background: linear-gradient(to bottom, #ffcdb281, #b35f6f);
     color: #FEF9E1;
     display: flex;
-    align-items: start;
-    justify-content: space-evenly;
-    font-size: 28px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
     opacity: 0;
-    transform: translateY(50px); /* Start from below */
+    transform: translateY(50px);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .pop-up.visible {
     opacity: 0.9;
-    transform: translateY(0); /* Move to original position */
+    transform: translateY(0);
 }
 
-
-
-
-/* styles.css */
-
-.pop-up.hidden {
-    opacity: 0;
-    transform: translateY(50px); /* Move down when hidden */
-}
-
-
-
+/* Game Container */
 #game-container {
     background: white;
-    width: 350px;
+    width: 90%;
+    max-width: 400px;
     padding: 20px;
     margin: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+/* Input dan Tombol */
+
+}
+
+/* List Karakter */
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+    padding: 20px;
+}
+
+.character {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.character img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container2 {
+        grid-template-columns: 1fr; /* Satu kolom untuk layar kecil */
+    }
+
+    .character img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .box, .box1 {
+        font-size: 16px;
+    }
+}
+
 
 input {
     width: 80%;
@@ -132,5 +142,3 @@ button {
 
 button:hover {
     background-color: #0056b3;
-}
-
