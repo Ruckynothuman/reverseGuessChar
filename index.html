@@ -1,81 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project kolaborasi</title>
-
+    <title>Project Guess char Rucky</title>
+<!-- Kalian bisa ubah tittle buat ubah judul website -->
     <link rel="stylesheet" href="css/index.css">
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
-
 </head>
+
 <body class="playfair-display" >
     <div class="background">
-        <img class="backgroundmove" id="imageback" src="img/Official-Launch-Content-Overview.webp" alt="bg">
+    <img class="backgroundmove" id="imageback" src="img/Official-Launch-Content-Overview.webp" alt="bg">
 
-
-   
-
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-   <div class="box pop-up">
-    <div class="container1">
-                <h2>Game Tebak Karakter Reverse 1999</h2>
-                <p>Masukkan nama kedalam kotak untuk memulai menebak.</p>
-        
-                <input type="text" id="guess" placeholder="Tebak karakter..." autocomplete="off">
-                <button onclick="checkGuess()">Tebak</button>
-        
-                <p id="result"></p>
-                <p>Kesempatan tersisa: <span id="remaining-guesses">5</span></p>
-                <center>
+    <br>
+    <br>
+    <div class="box pop-up">
+        <div class="container1">
+            <h2>Game Tebak Karakter Reverse 1999</h2>
+            <p>Masukkan nama kedalam kotak untuk memulai menebak.</p>
+            <input type="text" id="guess" placeholder="Tebak karakter..." autocomplete="off">
+            <button onclick="checkGuess()">Tebak</button>
+            <p id="result"></p>
+            <p>Kesempatan tersisa: <span id="remaining-guesses">5</span></p>
+            <center>
                 <img src="img/R.gif" alt="wa" height="300" width="300">
-                </center>
-            </div>
+            </center>
         </div>
+    </div>
 
-
-         <div class="box pop-up">
-            <div class="container">
-            
-                <img style="position: relative; right: 50px;"  src="img/yama-no-susume-yukimura-aoi.gif" alt="aw">
-
-                
-                <p><center> 
-                    <br>
-                    <br>
-                    
-                    Hay guys, terimakasih udh ngunjungin website
-                    <br>
-                    
-                    <br>
-                    Created by: Rucky 
-                
-                </center>
-                </p>
-                
-
-            </div>
+    <div class="box pop-up">
+        <div class="container">
+            <p>
+            <center>
+                <img src="img/yama-no-susume-yukimura-aoi.gif" alt="aw">
+                <br>
+                <br>
+                Hay guys, terimakasih udh ngunjungin website
+                <br>
+                <br>
+                Created by: Rucky 
+            </center>
+            </p>
         </div>
-</div> 
+    </div>
 
-        <script src="index.js">
+    <!-- Ubah di bawah ini menggunakan list karakter yang telah kalian buat di index.js -->
+    <div class="pop-up box1"> 
+        <center>
+            <h3 >List karakter yang tersedia dalam tebakan</h3>
+            <img style="max-width: 70px; height: auto;" src="img/Vertin_Icon.webp" alt="aw">
+            <p  >Name:Vertin Afflatus:Uknown Damage:Uknown </p>
+            <br>
+            <img style="max-width: 70px; height: auto;" src="img/Druvis_III_Icon.webp" alt="aw">
+            <p >Name:Druvis Afflatus:Plant Damage:Mental </p>
+            <br>
+            <img style="max-width: 70px; height: auto;" src="img/Sonetto_Icon.webp"aw">
+            <p  >Name:Sonetto Afflatus:Mineral Damage:Reality </p>
+            <br>
+            <img  style="max-width: 70px; height: auto;" src="img/Schneider_Icon.webp" alt="aw">
+            <p >Name:Schneider Afflatus:Beast Damage:Mental </p>
+            <br>
+            <img style="max-width: 70px; height: auto;" src="img/Regulus_Icon.webp" alt="aw">
+            <p >Name:Regulus Afflatus:Star Damage:Mental </p>
+        </center>
+    </div>
+    <br>
+    <br>
+</div>
 
 
-        </script>
-
-
-
-
+<script src="index.js">
+</script>
 
 </body>
 </html>
