@@ -53,7 +53,7 @@ function checkGuess() {
         clue += currentCharacter.Afflatus === characters.find(c => c.name.toLowerCase() === guess.toLowerCase())?.Afflatus ? 'Afflatus benar' : 'Afflatus salah';
         clues.push(clue);
     }
-    
+    // Kalian bisa eksperimen dan ubah ubah affliatus/dmg/Inisial pake kategori yang ingin kalian pake
     guessesLeft--;
     remainingGuessesElement.textContent = guessesLeft;
     resultElement.innerHTML = clues.join('<br>');
