@@ -23,6 +23,8 @@ const characters = [
     { name: 'Regulus', Damage: 'Mental', Afflatus: 'Star', initials: 'R' }
 ];
 
+// kalian bisa ubah di atas ini pake nama karakter yang ingin kalian masukkan
+
 let guessesLeft = 5;
 let currentCharacter = characters[Math.floor(Math.random() * characters.length)];
 
@@ -69,12 +71,11 @@ function resetGame() {
     console.log("Mulai...");
     
     setTimeout(() => {
-        console.log("Game direset setelah 2 detik...");
         
         guessesLeft = 5;
         currentCharacter = characters[Math.floor(Math.random() * characters.length)];
         document.getElementById("remaining-guesses").textContent = guessesLeft;
         document.getElementById("result").textContent = "";
         document.getElementById("guess").value = "";
-    }, 5000); // 2 detik
+    }, 5000); // 5 detik
 }
