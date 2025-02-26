@@ -4,14 +4,14 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     box-sizing: border-box;
 }
 
 .background {
     position: relative;
-    width: 100%;
+    width: auto;
     background: linear-gradient(to bottom, #00000072, #000000);
 }
 
@@ -20,7 +20,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     object-fit: cover;
     object-position: center;
     opacity: 4;
@@ -56,6 +56,18 @@ body {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.box1 {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    margin: 3% auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffcdb2, #b35f6f);
+    color: #1a1917;
+    transform: translateY(50px);
+
 }
 
 .pop-up.visible {
