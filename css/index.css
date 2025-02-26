@@ -47,8 +47,8 @@ body {
     height: auto;
     margin: 3% auto;
     padding: 20px;
-    background: linear-gradient(to bottom, #ffcdb281, #b35f6f);
-    color: #FEF9E1;
+    background: linear-gradient(to bottom, #ffcdb2, #b35f6f);
+    color: #1a1917;
     display: flex;
     flex-direction: column;
     align-items: center;
