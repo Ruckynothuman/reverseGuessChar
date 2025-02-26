@@ -31,7 +31,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Kontainer Umum */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -40,8 +40,8 @@ body {
     text-align: center;
 }
 
-/* Menggabungkan .box dan .box1 */
-.box, .box1 {
+
+.box {
     width: 90%;
     max-width: 1300px;
     height: auto;
@@ -63,7 +63,6 @@ body {
     transform: translateY(0);
 }
 
-/* Game Container */
 #game-container {
     background: white;
     width: 90%;
@@ -73,55 +72,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-/* Input dan Tombol */
-
-}
-
-/* List Karakter */
-.container2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    text-align: left;
-    padding: 20px;
-}
-
-.character {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.character img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 20px;
-}
-
-/* Responsiveness */
-@media (max-width: 768px) {
-    .container2 {
-        grid-template-columns: 1fr; /* Satu kolom untuk layar kecil */
-    }
-
-    .character img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .box, .box1 {
-        font-size: 16px;
-    }
-}
-
 
 input {
     width: 80%;
@@ -142,3 +92,4 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
